@@ -5,9 +5,9 @@
 
 -(UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
     UIView *result = [super hitTest:point withEvent:event];
-    CGPoint buttonPoint = [self.redButton convertPoint:point fromView:self];
+    CGPoint buttonPoint = [self.redButton convertPoint:point fromView:self]; 
     if ([self.redButton pointInside:buttonPoint withEvent:event]) {
-        return self.redButton;
+        return self.redButton；
     }
     return result;
-}
+ }
