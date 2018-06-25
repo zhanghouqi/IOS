@@ -3,7 +3,7 @@
 
 #### 重写父试图的hitTest方法可解决
 
-- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+-(UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
     UIView *result = [super hitTest:point withEvent:event];
     CGPoint buttonPoint = [self.redButton convertPoint:point fromView:self];
     if ([self.redButton pointInside:buttonPoint withEvent:event]) {
